@@ -40,16 +40,25 @@
         vr-mode-ui='enabled: false;'
         renderer="logarithmicDepthBuffer: true;"
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
+        <a-asset>
+          <img id="img1" src="pic/img_1.png">
+          <img id="img2" src="pic/img_2.png">
+          <img id="img3" src="pic/img_3.png">
+          <img id="img4" src="pic/img_4.png">
+          <img id="img6" src="pic/img_6.png">
+          <img id="img7" src="pic/img_7.png">
+          <img id="img9" src="pic/img_9.png">
+          <img id="img11" src="pic/img_11.png">
+          <img id="img12" src="pic/img_12.png">
+          <img id="img13" src="pic/img_13.png">
+          <img id="img14" src="pic/img_14.png">
+          <img id="img15" src="pic/img_15.png">
+        </a-asset>
 
         <a-nft
             type='nft' url='https://bavistyc.github.io/arweb/image_descriptors/google'
             smooth='true' smoothCount='10' smoothTolerance='0.01' smoothThreshold='5'>
-            <a-entity
-                gltf-model='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf'
-                scale="5 5 5"
-                position="50 150 -100"
-                >
-            </a-entity>
+            <a-entity geometry="primitive:plane;" material="src:#img1" rotation="-90 0 0" ></a-entity>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
