@@ -22,7 +22,7 @@
     -o-background-size:cover;
     background-size:cover;
     /* background-color: rgba(0, 0, 0, 0.8); */
-    z-index: 9999;
+    z-index: 9998;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,6 +40,7 @@
   .tops{
     background-image:url('pic/ar-camra3.png'); 
     height: 100%;
+    position: relative;
     /* background-color: rgb(238, 255, 0);  */
     background-repeat:no-repeat;
     background-position: center;
@@ -47,6 +48,12 @@
     -webkit-background-size:55% auto;
     -o-background-size:55% auto;
     background-size:55% auto;
+  }
+  .topic{
+    position: absolute;
+    bottom:10px;
+    left:50%;
+    z-index: 9999;
   }
 </style>
 </head>
@@ -60,6 +67,7 @@
     <div>Loading, please wait...</div>
   </div>
   <div class="tops">
+    <div class="topic">back</div>
     <a-scene
         vr-mode-ui='enabled: false;'
         renderer="logarithmicDepthBuffer: true;"
@@ -74,7 +82,7 @@
             <!-- <a-entity geometry="primitive:plane;" material="src:#img1" rotation="-90 0 0" scale="100 100 100"
                 position="5 0 0"></a-entity>-->
 			<!--GIF-->
-           <a-entity geometry="primitive:plane;" material="shader:gif;src:url(pic/img_5.gif);opacity:1" rotation="-90 0 0" scale="150 150 150" position="70 0 -140"> ></a-entity>
+           <a-entity geometry="primitive:plane;" material="shader:gif;src:url(pic/img_5.gif);opacity:1" rotation="-90 0 0" scale="200 200 200" position="70 0 -180"> ></a-entity>
         </a-nft>
         <a-nft
             type='nft' url='https://bavistyc.github.io/arweb/image_descriptors/mission3-01'
