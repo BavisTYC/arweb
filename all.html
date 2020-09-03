@@ -6,8 +6,6 @@
     <title>Image based tracking AR.js demotitle></title>
     
     <script src='https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js'></script>
-    <script src="script/arjs.js"></script>
-    <script src="script/aframe-gif-shader.js"></script>
 
 <style>
   .arjs-loader {
@@ -80,22 +78,19 @@
         <img id="img1" src="pic/img_1.png">
     </a-asset>
         <a-nft
-            type='nft' url='https://bavistyc.github.io/arweb/image_descriptors/mission4-01'
+            type='nft' url='https://bavistyc.github.io/arweb/image_descriptors/marker_1'
             smooth='true' smoothCount='1' smoothTolerance='0.01' smoothThreshold='2'>
 			<!-- åœ–ç‰‡-->
             <!-- <a-entity geometry="primitive:plane;" material="src:#img1" rotation="-90 0 0" scale="100 100 100"
                 position="5 0 0"></a-entity>-->
 			<!--GIF-->
-           <a-entity geometry="primitive:plane;" material="shader:gif;src:url(pic/img_5.gif);opacity:1" rotation="-90 0 0" scale="200 200 200" position="70 0 -180"> ></a-entity>
-        </a-nft>
-        <a-nft
-            type='nft' url='https://bavistyc.github.io/arweb/image_descriptors/mission3-01'
-            smooth='true' smoothCount='1' smoothTolerance='0.01' smoothThreshold='2'>
-			<!-- åœ–ç‰‡-->
-            <!-- <a-entity geometry="primitive:plane;" material="src:#img1" rotation="-90 0 0" scale="100 100 100"
-                position="5 0 0"></a-entity>-->
-			<!--GIF-->
-           <a-entity geometry="primitive:plane;" material="shader:gif;src:url(pic/img_8.gif);opacity:1" rotation="-90 0 0" scale="150 150 150" position="70 0 -50"> ></a-entity>
+           <a-entity >
+                <a-image src="https://bavistyc.github.io/arweb/pic/img_1.png"
+                scale="150 150 150"
+                position="70 0 -180"
+                crossorigin
+            ></a-image>
+           </a-entity>
         </a-nft>
 		<a-entity camera></a-entity>
     </a-scene>
